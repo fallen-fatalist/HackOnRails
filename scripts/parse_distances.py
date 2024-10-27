@@ -104,9 +104,9 @@ def save_to_json(data, output_path):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    xlsx_path = "КЗХ_2024-07-29.xlsx"
-    output_distances = "graph.json"
-    output_names = "loc_id_map.json"
+    xlsx_path = "data/stations.xlsx"
+    output_distances = "data/graph.json"
+    output_names = "data/loc_id_map.json"
     
     try:
         rows = stations_parse(xlsx_path)

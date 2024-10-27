@@ -19,7 +19,7 @@ There is a description how station.xlsx were parsed
     * We decided to map the station_id -> station_name, not vice versa: station_name -> station_id
     * We parsed each line in xls file, and if 4 fields are not empty or corrupted
     * we collect the tuples of (station_id, station_name) in the list
-      eventually saved it loc_id_map.json
+      eventually saved it loc_id_map.json file in json format
 3. Get station distances:
     * Each station must have at least 2 distances in its list, since it has two routes to targeted stations in region
     * More than 2 routes will be in case when there are several routes to different stations from one station
@@ -32,3 +32,4 @@ There is a description how station.xlsx were parsed
         [another_station, distance_to_another_station] \
         ] 
     * If there are other routes in the same station, these routes will be appended to routes list of station 
+    * Eventually it was saved to graph.json file in json format

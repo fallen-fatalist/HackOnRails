@@ -27,8 +27,8 @@ There is a description how station.xlsx were parsed
     * So the station_back is detected in the last entry in every region list where distance_back is equal 0
     * So the there is a map station_id -> [ \
         [station_to, distance_to], \
-        [station_back, distance_back], \ 
+        [station_back, distance_back], \
         ..., \
-        [another_station, distance_to_another_station] \ 
+        [another_station, distance_to_another_station] \
         ] 
     * If there are other routes in the same station, these routes will be appended to routes list of station 
